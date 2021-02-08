@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+  <div id="navbar">
+  <ul class="nav_bar" style="text-align: left;">
+    <li><a class="active" href="#" onclick="topFunction()">Home</a></li>
+    <li><a class="active" href="#section1">Education</a></li>
+    <li><a class="active" href="#section2">Projects</a></li>
+    <li><a class="active" href="#" onclick="return confirm('You are about to download my resume,are you sure?');">Resume</a></li>
+
+    
+  </ul>
+  </div>
+  <center>
+  <h1 style="font-style: italic;"><br>Welcome!</br></h1>
+  <img  src="/images/mihai_stocheci (2).jpg" width="400" height="400" style="border-radius: 50%; margin-top: 30px;"></center>
+  
+<div style="padding:0 px;">
+ <center>
+  <p>You have landed on Victor Stocheci's personal Website.</p>
+  <p>Currently I am studying Informatics at <a href="http://stiinte.ucv.ro" style="color: white;">Faculty of Science in Craiova</a></p>
+  
+<h2><div class="zoom"><a href="mailto:mihaistocheci11@gmail.com"><img src="images/gmail.png"width="85%"></a></div></h2>
+<h3><div class="zoom"><a href="https://github.com/MihaiStocheci11"><img src="images/gh.png" width="30%"></a></div></h3>
+
+
+
+    </center>
+    <div class="main" id="section1">
+     <center> <br><br><h1 style="color: #98a6ad;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Education</h1></center></br></br>
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2 style="color:rgba(255,255,255,.8)">2020 - Present</h2>
+            <p style="color:rgba(255,255,255,.8)"><strong>University of Craiova</strong><br><p2 style="color: rgba(255,255,255,.54);">Faculty of Science , Informatics</br></p></p2>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2 style="color:rgba(255,255,255,.8)">2016-2020</h2>
+            <p style="color:rgba(255,255,255,.8)"><strong>Elena Cuza National College (Craiova)</strong><br><p2 style="color: rgba(255,255,255,.54);">Mathematics-Informatics</br></p></p2>
+          </div>
+        </div>
+      
+      </div>
+</div>
+
+<div class="main" id="section2">
+  <center> <br><br><h1 style="color: #98a6ad;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Projects</h1></center></br></br>
+      <div class="content">
+        <h2 style="color:rgba(255,255,255,.8)"><a href="https://github.com/MihaiStocheci11/Proiect-Semestrul-I" style="color: lightskyblue;">SpaceShip Game in C</a></h2>
+        <a href="https://github.com/MihaiStocheci11/Proiect-Semestrul-I"><img src="images/c-programming-569564.webp" width="5%"></a>
+        <p style="margin-top: -73px;margin-left: 100px;color:rgba(255,255,255,.8)"><strong>During the first semester I created a game with a spaceship that must avoid certain objects in order to advance in score and trying to not lose lives,which puts into practice my programming skills.</strong>
+      </div>
+
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+</body>
+</html>
